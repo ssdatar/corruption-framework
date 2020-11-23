@@ -1,0 +1,9 @@
+{{#with (lookup @root page)}}
+  <h1 class="main__hed benton-bold">{{{ hed }}}</h1>
+
+  {{#each this.content}}
+    {{#ifEquals type 'text'}}
+      <p class="main__graf">{{{ value }}}</p>
+    {{/ifEquals}}
+  {{/each}}
+{{/with}}

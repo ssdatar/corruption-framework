@@ -1,0 +1,32 @@
+{
+  "copy": {
+    "google": {
+      "story": [
+        {
+          "name": "intro",
+          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
+        },
+        {
+          "name": "step-1",
+          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
+        },
+        {
+          "name": "step-2",
+          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
+        },
+        {
+          "name": "step-3",
+          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
+        },
+        {
+          "name": "step-4",
+          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
+        }
+      ]
+    },
+    "methode": {
+      "story": []
+    }
+  },
+  "path": "business/graphics/2020/11/corruption-slush"
+}

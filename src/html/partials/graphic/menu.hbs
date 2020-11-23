@@ -1,0 +1,9 @@
+<nav class="sidebar benton-bold">
+  <ul class="sidebar__list">
+    {{#each @root.intro.menu}}
+    <li class="sidebar__list--item">
+      <a href="{{{ link }}}" rel="noopener noreferrer">{{{ title }}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>

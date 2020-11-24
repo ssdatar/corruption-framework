@@ -1,0 +1,42 @@
+.box
+  &__container
+    width 100%
+    height 100%
+    position relative
+  &__slides
+    &--item
+      rhythm('base')
+
+.scrolly
+  width 100%
+  font-family 'Futura'
+
+  .sticky
+    position sticky
+    top 0
+    left 0
+    z-index 0
+    opacity 0
+    &.fade-in
+      opacity 1
+      transition opacity .3s ease-in
+    // height 900px
+
+    h4
+      font-size 1.3rem
+      margin .5em 0
+
+
+  &__steps
+    max-width 35rem
+    margin 0 auto
+
+    .step
+      min-height 90vh
+      margin-bottom 1rem
+      transform translate3d(0, 0, 0)
+      line-height 1.5
+
+      p
+        background rgba(255, 255, 255, 0.95)
+        padding 1em

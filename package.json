@@ -57,6 +57,7 @@
     "scrollama": "^1.4.4",
     "shelljs": "0.8.3",
     "stickyfilljs": "^2.1.0",
+    "swiper": "^6.3.5",
     "typogr": "^0.6.8",
     "webpack": "3.11.0",
     "webpack-stream": "4.0.1",

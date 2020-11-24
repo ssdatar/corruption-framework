@@ -1,5 +1,7 @@
+/* eslint-disable no-new */
 import removeMobileHover from './utils/removeMobileHover';
 import wireSocialButtons from './utils/wireSocialButtons';
+import scrolly from './scrolly';
 
 removeMobileHover();
 
@@ -14,3 +16,5 @@ if (document.querySelectorAll('.g-header__share').length) {
     mail: '.g-header__share-button--ma',
   });
 }
+
+scrolly();

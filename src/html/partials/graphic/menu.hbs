@@ -1,9 +1,12 @@
+{{#with (lookup @root page)}}
 <nav class="sidebar">
   <ul class="sidebar__list">
-    {{#each @root.intro.menu}}
-    <li class="sidebar__list--item">
+    {{#each menu}}
+    <li class="sidebar__list--item" data-active="{{{ active }}}">
       <a href="{{{ link }}}" rel="noopener noreferrer">{{{ title }}}</a>
     </li>
     {{/each}}
   </ul>
 </nav>
+
+{{/with}}

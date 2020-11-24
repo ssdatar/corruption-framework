@@ -1,12 +1,15 @@
 {{#> layout page='intro'}}
-  <h1 class="main__hed">{{{ @root.intro.hed }}}</h1>
+  <div class="intro" data-aos="fade-in">
+    <h1 class="main__hed">{{{ @root.intro.hed }}}</h1>
+    <h2 class="main__dek">{{{ @root.intro.dek }}}</h2>
+  </div>
 
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
       {{> graphic/menu }}
     </div>
 
-    <div class="col-md-7">
+    <div class="col-md-8 col-lg-7">
       <div class="main">
         {{> graphic/content page='intro'}}
       </div>

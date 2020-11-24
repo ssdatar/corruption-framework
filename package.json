@@ -7,7 +7,11 @@
     "cover 99.5% in US",
     "not dead"
   ],
+  "scripts": {
+    "deploy": "gh-pages -d dist/prod"
+  },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "archieml": "0.4.2",
     "babel-core": "6.26.0",
     "babel-eslint": "^10.0.1",
@@ -57,7 +61,6 @@
     "scrollama": "^1.4.4",
     "shelljs": "0.8.3",
     "stickyfilljs": "^2.1.0",
-    "swiper": "^6.3.5",
     "typogr": "^0.6.8",
     "webpack": "3.11.0",
     "webpack-stream": "4.0.1",
@@ -70,6 +73,7 @@
     "chalk": "^2.4.2",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.16.0",
+    "gh-pages": "^3.1.0"
   }
 }

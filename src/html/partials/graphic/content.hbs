@@ -1,11 +1,33 @@
 {{#with (lookup @root page)}}
   {{#each this.content}}
     {{#ifEquals type 'text'}}
-      <p class="main__graf col-md-10">{{{ value }}}</p>
+      <p class="main__graf col-md-11">{{{ value }}}</p>
     {{/ifEquals}}
 
-    {{#ifEquals type 'box-img'}}
-      {{> graphic/swiper-box value}}
+    {{#ifEquals type 'section'}}
+      <h3 class="main__section" id="{{slugify value}}">{{{ value }}}</h3>
+    {{/ifEquals}}
+
+    {{#ifEquals type 'list'}}
+      <ul class="main__graf--list col-md-11">
+      {{#with value.points }}
+        {{#each this}}
+        <li class="main__graf--list-item">{{{ value }}}</li>
+        {{/each}}
+      {{/with}}
+      </ul>
+    {{/ifEquals}}
+
+    {{#ifEquals type 'box-img' }}
+      {{> graphic/swiper-box value page=../../page}}
+    {{/ifEquals}}
+
+    {{#ifEquals type 'move-box'}}
+      {{> graphic/move-box value}}
+    {{/ifEquals}}
+
+    {{#ifEquals type 'nav'}}
+      <a href="{{ value.url }}" class="main__nav">{{{ value.text }}}</a>
     {{/ifEquals}}
   {{/each}}
 {{/with}}

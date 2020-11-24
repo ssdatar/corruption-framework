@@ -17,10 +17,13 @@
     left 0
     z-index 0
     opacity 0
-    &.fade-in
+    width 100%
+    +mq(bp-3)
+      top 10px
+
+    &.scrolly-fade-in
       opacity 1
-      transition opacity .3s ease-in
-    // height 900px
+      transition opacity 1s ease-in-out
 
     h4
       font-size 1.3rem
@@ -40,3 +43,13 @@
       p
         background rgba(255, 255, 255, 0.95)
         padding 1em
+
+.move-box
+  padding 1em
+  background $accent-b1
+  rhythm('small')
+  font-family 'Futura'
+
+  &__title
+    font-weight bold
+

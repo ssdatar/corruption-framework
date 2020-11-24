@@ -6,16 +6,25 @@
 // ex: background-image url($assets-path + 'filename.jpg')
 
 // See `base` folder for variables (color, font, media queries)
+
+.intro
+  padding 1em
+  max-width 55rem
+  margin 1em auto
+  height 70vh
+
 .sidebar
-  padding-top 1em
-  padding-left 1em
-  position sticky
-  top 0
-  left 1em
-  background $primary-red
-  height 100vh
-  font-family 'Futura'
-  z-index 10
+  display none
+  +mq(bp-1)
+    display block
+    padding-top 1em
+    padding-left 1em
+    position sticky
+    top 0
+    left 1em
+    background $primary-red
+    height 100vh
+    font-family 'Futura'
 
   &__list
     list-style-type none
@@ -55,18 +64,55 @@
     font-size 1.5em
     font-family 'Futura'
     font-weight bold
+    margin 1em 0
     +mq(bp-2)
+      font-size 2em
+    +mq(bp-3)
       font-size 3em
+
+  &__dek
+    font-size 1em
+    font-family 'Futura'
+    font-weight bold
+    margin 1em 0
+    +mq(bp-2)
+      font-size 1.3em
+    +mq(bp-3)
+      font-size 1.6em
+
+  &__section
+    rhythm('medium')
+    font-family 'Futura'
 
   &__graf
     rhythm('base')
-    max-width 50rem
+    max-width 40rem
     margin 1em 0
     line-height 1.6
     font-weight normal
+
+    &--list
+      rhythm('base')
+      max-width 40rem
+      margin 1em 2em
+      line-height 1.6
 
     strong
       font-weight bold
 
     em
       font-style italic
+
+  &__nav
+    padding 1em
+    margin 1em 0
+    @extends $btn
+    background $accent-b2
+    font-family 'Futura'
+    color $black
+    +mq(bp-2)
+      margin-left 15px
+    &:hover
+      background darken($accent-b2, 30)
+      text-decoration none
+      color $offwhite

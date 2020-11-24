@@ -1,15 +1,13 @@
-{{log boximage}}
-
 {{#if boximage}}
   <div class="scrolly">
     <figure class="sticky">
       <h4 class="bold">{{{ boxtitle }}}</h4>
       <picture class="figure__img">
-        <source data-srcset="../assets/{{ boximage }}.jpg" media="(min-width:850px)">
-        <source data-srcset="../assets/{{ boximage }}.jpg" media="(min-width:400px)">
-        <source data-srcset="../assets/{{ boximage }}.jpg" media="(min-width:1px)">
-        <img class="lazyload" src="../assets/{{ boximage }}.jpg"
-          data-srcset="../assets/{{ boximage }}_placeholder.jpg" alt="{{value.alt}}" />
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:850px)">
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:400px)">
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:1px)">
+        <img class="lazyload" src="{{ imgpath }}/assets/{{ boximage }}.jpg"
+          data-srcset="{{ imgpath }}/assets/{{ boximage }}_placeholder.jpg" alt="{{value.alt}}" />
       </picture>
       <figcaption class="full__caption benton-regular"></figcaption>
     </figure>
@@ -23,28 +21,3 @@
     </div>
   </div>
 {{/if}}
-
-
-
-{{!-- <div class="box__container">
-  <div class="box__slides swiper-wrapper">
-    {{#each this}}
-      {{#ifEquals type 'boxtext'}}
-        {{#each value}}
-          <div class="box__slides--item swiper-slide">
-            <h4 class="bold">{{{ boxtitle }}}</h4>
-            <p>{{{ this.value }}}</p>
-          </div>
-        {{/each}}
-      {{/ifEquals}}
-    {{/each}}
-  </div>
-
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
- --}}

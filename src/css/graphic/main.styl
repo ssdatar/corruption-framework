@@ -7,6 +7,16 @@
 
 // See `base` folder for variables (color, font, media queries)
 
+.futura-bold
+  font-family 'FuturaStd-Bold', Impact, Arial
+  font-weight 700
+
+.futura-light
+  font-family 'FuturaStd-Light', Impact, Arial
+
+.futura-medium
+  font-family 'FuturaStd-Medium', Impact, Arial
+
 .intro
   padding 1em
   max-width 55rem
@@ -24,7 +34,6 @@
     left 1em
     background $primary-red
     height 100vh
-    font-family 'Futura'
 
   &__list
     list-style-type none
@@ -68,8 +77,6 @@
 
   &__hed
     font-size 1.5em
-    font-family 'Futura'
-    font-weight bold
     margin 1em 0
     +mq(bp-2)
       font-size 2em
@@ -78,8 +85,6 @@
 
   &__dek
     font-size 1em
-    font-family 'Futura'
-    font-weight bold
     margin 1em 0
     +mq(bp-2)
       font-size 1.3em
@@ -88,7 +93,6 @@
 
   &__section
     rhythm('medium')
-    font-family 'Futura'
 
   &__graf
     rhythm('base')

@@ -49,13 +49,25 @@ $typefaces = {
   }
 }
 
+@font-face
+  font-family 'FuturaStd-Bold';
+  src url('assets/fonts/FuturaStd-Bold.woff'), url('assets/fonts/FuturaStd-Bold.woff2')
+
+@font-face
+  font-family 'FuturaStd-Light';
+  src url('assets/fonts/FuturaStd-Light.woff'), url('assets/fonts/FuturaStd-Light.woff2')
+
+@font-face
+  font-family 'FuturaStd-Medium';
+  src url('assets/fonts/FuturaStd-Medium.woff'), url('assets/fonts/FuturaStd-Medium.woff2')
+
 set-font(font)
   if font in $typefaces
     $family = $typefaces[font].family
     $weight = $typefaces[font].weight
     $style = $typefaces[font].style
     $fallback = $typefaces[font].classification
-    $font-path = 'https://apps.bostonglobe.com/common/font/'
+    $font-path = $typefaces[font].path
     @font-face
       font-family '' + $family
       src url($font-path + font + '.woff2') format('woff2'), url($font-path + font + '.woff') format('woff')

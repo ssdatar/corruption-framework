@@ -6,7 +6,7 @@ const htmlEl = document.documentElement;
 const TIMEOUT = 5000;
 
 function addFont({ family, suffix }) {
-  const name = family.toLowerCase().replace(/ /g, '-');
+  const name = family.replace(/ /g, '-');
   const className = `loaded-${name}-${suffix}`;
   addClass(htmlEl, className);
 }

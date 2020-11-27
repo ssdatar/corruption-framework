@@ -1,0 +1,29 @@
+<div class="main__questions__wrapper">
+  <ul class="main__questions col-md-11 futura-medium">
+    {{#with q }}
+    <ol class="main__questions">
+      {{#each this}}
+        {{#ifEquals type 'text'}}
+          <li class="main__questions--list">{{{ value }}}</li>
+        {{/ifEquals}}
+
+        {{#ifEquals type 'subq'}}
+          <p class="main__questions--subq futura-bold">{{{ value.0.value }}}</p>
+
+          {{#each value}}
+            {{#ifEquals type 'subq_text'}}
+              <ul class="subq_list">
+                {{#each value}}
+                  <li class="subq_list--item">{{{ value }}}</li>
+                {{/each}}
+              </ul>
+            {{/ifEquals}}
+          {{/each}}
+        {{/ifEquals}}
+
+
+      {{/each}}
+    </ol>
+    {{/with}}
+  </ul>
+</div>

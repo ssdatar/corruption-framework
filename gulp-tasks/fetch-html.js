@@ -9,8 +9,6 @@ const htmlparser = require('htmlparser2');
 const Entities = require('html-entities').AllHtmlEntities;
 const keyPath = os.homedir();
 const { find, some } = require('lodash');
-const { docToArchieML } = require('@newswire/doc-to-archieml');
-const { google } = require('googleapis');
 
 // Input and output files
 const configPath = `${process.cwd()}/data/config.json`;
@@ -139,8 +137,8 @@ function parseHtml(html, filename) {
 
     const parsed = archieml.load(parsedText);
 
-    if (parsed.text) {
-      parsed.text.forEach(el => {
+    if (parsed.content) {
+      parsed.content.forEach(el => {
         if (el.type === 'text') {
           el.value = typogr.smartypants(el.value);
         }
@@ -178,20 +176,11 @@ function exportDoc({ id, name }) {
   });
 }
 
-
-async function main({id, name}) {
-  const auth = await google.auth.getClient({
-    keyFile: 'data/key.json',
-    scopes: ['https://www.googleapis.com/auth/documents.readonly'],
-  });
-  const results = await docToArchieML({ documentId: id, auth });
-  // console.log(results);
-}
-
 gulp.task('fetch-html', (cb) => {
   if (story) {
-    story.forEach((googleObj) => {
+    story.forEach((googleObj, i) => {
       exportDoc(googleObj);
+      if (i === 1) {}
         // .catch(console.error);
     });
   } else {
@@ -199,5 +188,3 @@ gulp.task('fetch-html', (cb) => {
   }
   cb();
 });
-
-

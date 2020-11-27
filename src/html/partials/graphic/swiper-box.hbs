@@ -1,7 +1,7 @@
 {{#if boximage}}
   <div class="scrolly">
     <figure class="sticky">
-      <h4 class="bold">{{{ boxtitle }}}</h4>
+      <h4 class="bold futura-bold">{{{ boxtitle }}}</h4>
       <picture class="figure__img">
         <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:850px)">
         <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:400px)">
@@ -12,7 +12,7 @@
       <figcaption class="full__caption benton-regular"></figcaption>
     </figure>
 
-    <div class="scrolly__steps">
+    <div class="scrolly__steps futura-medium">
       {{#each boxtext}}
         <div class="step">
           <p>{{{ value }}}</p>

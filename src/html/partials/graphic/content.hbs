@@ -18,6 +18,10 @@
       </ul>
     {{/ifEquals}}
 
+    {{#ifEquals type 'questions' }}
+      {{> graphic/questions value page=../../page}}
+    {{/ifEquals}}
+
     {{#ifEquals type 'box-img' }}
       {{> graphic/swiper-box value page=../../page}}
     {{/ifEquals}}

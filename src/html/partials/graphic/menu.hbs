@@ -1,12 +1,11 @@
 {{#with (lookup @root page)}}
-<nav class="sidebar">
-  <ul class="sidebar__list">
-    {{#each menu}}
-    <li class="sidebar__list--item futura-medium" data-active="{{{ active }}}">
-      <a href="{{{ link }}}" rel="noopener noreferrer">{{{ title }}}</a>
-    </li>
-    {{/each}}
-  </ul>
-</nav>
-
+  <nav class="sidebar">
+    <ul class="sidebar__list">
+      {{#each menu}}
+      <li class="sidebar__list--item futura-medium" data-active="{{{ active }}}">
+        <a href="{{{ link }}}" rel="noopener noreferrer">{{{ title }}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </nav>
 {{/with}}

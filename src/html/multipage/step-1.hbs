@@ -1,11 +1,15 @@
-{{#> layout page='step-1'}}
+{{#> layout page='step1' js='step1.js'}}
+  <div class="intro" data-aos="fade-in" data-aos-duration="1000">
+    <h1 class="main__hed futura-bold">{{{ @root.step1.hed }}}</h1>
+  </div>
+
   <div class="row">
     <div class="col-md-3">
-      {{> graphic/menu }}
+      {{> graphic/menu page='step1'}}
     </div>
 
     <div class="col-md-6">
-      {{> graphic/content }}
+      {{> graphic/content page='step1'}}
     </div>
   </div>
 {{/layout}}

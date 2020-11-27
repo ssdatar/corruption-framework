@@ -7,19 +7,19 @@
           "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
         },
         {
-          "name": "step-1",
+          "name": "step1",
+          "id": "1JHdbuogajmNO_nwH7oQRKZNx61jyFKMaY8IlYg9IA4A"
+        },
+        {
+          "name": "step2",
           "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
         },
         {
-          "name": "step-2",
+          "name": "step3",
           "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
         },
         {
-          "name": "step-3",
-          "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
-        },
-        {
-          "name": "step-4",
+          "name": "step4",
           "id": "1fn9RLnwN7NpGsmLSg5NN7Ni4aEKPCMgQNKZzczD5Iko"
         }
       ]

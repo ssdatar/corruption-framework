@@ -72,6 +72,36 @@
             visibility visible
             transform scaleX(1)
 
+    &--sublist
+      margin-left 1.5em
+
+      li
+        margin .5em 0
+        a
+          text-decoration none
+          color $offwhite !important
+          position relative
+
+          &:before
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $offwhite;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+
+          &:hover
+            text-decoration underline
+            transition text-decoration .2s linear
+
+            &:before
+              visibility visible
+              transform scaleX(1)
+
 .main
   padding-top 1em
 

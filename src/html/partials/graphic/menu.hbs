@@ -1,11 +1,28 @@
-{{#with (lookup @root page)}}
-  <nav class="sidebar">
-    <ul class="sidebar__list">
-      {{#each menu}}
-      <li class="sidebar__list--item futura-medium" data-active="{{{ active }}}">
-        <a href="{{{ link }}}" rel="noopener noreferrer">{{{ title }}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </nav>
-{{/with}}
+<nav class="sidebar">
+  <ul class="sidebar__list">
+    <li class="sidebar__list--item futura-medium" data-active="{{{ page }}}">
+      <a href="./" rel="noopener noreferrer">Introduction</a>
+    </li>
+      <ul class="sidebar__list--sublist futura-light">
+        <li><a href="" rel="noopener noreferrer">What is corruption functionality?</a></li>
+        <li><a href="" rel="noopener noreferrer">Examples of corruption functionality</a></li>
+        <li><a href="" rel="noopener noreferrer">Why more successful anti-corruption interventions need to think about corruption functionality</a></li>
+        <li><a href="" rel="noopener noreferrer">The Framework structure</a></li>
+      </ul>
+    <li class="sidebar__list--item futura-medium">
+      <a href="../step-1" rel="noopener noreferrer">Step 1: What is the actual desired outcome?</a>
+    </li>
+
+    <li class="sidebar__list--item futura-medium">
+      <a href="../step-2" rel="noopener noreferrer">Step 2: What step of corruption are you concerned with?</a>
+    </li>
+
+    <li class="sidebar__list--item futura-medium">
+      <a href="../step-3" rel="noopener noreferrer">Step 3: What function(s) is corruption filling in this situation?</a>
+    </li>
+
+    <li class="sidebar__list--item futura-medium">
+      <a href="../step-4" rel="noopener noreferrer">Step 4: What other approaches help us better understand why corruption persists?</a>
+    </li>
+  </ul>
+</nav>

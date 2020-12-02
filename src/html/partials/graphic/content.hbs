@@ -1,4 +1,5 @@
 {{#with (lookup @root page)}}
+  {{log this.hed}}
   {{#each this.content}}
     {{#ifEquals type 'text'}}
       <p class="main__graf col-md-11">{{{ value }}}</p>
@@ -20,6 +21,10 @@
 
     {{#ifEquals type 'questions' }}
       {{> graphic/questions value page=../../page}}
+    {{/ifEquals}}
+
+    {{#ifEquals type 'questions-chapter-2' }}
+      {{> graphic/step-2-q-1 }}
     {{/ifEquals}}
 
     {{#ifEquals type 'box-img' }}

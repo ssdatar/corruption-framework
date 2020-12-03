@@ -1,5 +1,4 @@
 {{#with (lookup @root page)}}
-  {{log this.hed}}
   {{#each this.content}}
     {{#ifEquals type 'text'}}
       <p class="main__graf col-md-11">{{{ value }}}</p>

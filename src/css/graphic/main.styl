@@ -24,8 +24,10 @@
   padding 1em
   max-width 55rem
   margin 1em auto
+  +mq(bp-2)
+    max-width 50em
   +mq(bp-3)
-    max-width 45em
+    max-width 55em
 
   &__logos
     display flex
@@ -100,6 +102,7 @@
       li
         margin .5em 0
         font-size .95em
+        list-style-type disc
 
         a
           text-decoration none
@@ -155,7 +158,10 @@
 
   &__section
     rhythm('medium')
-    margin-left 15px
+    margin-left 10px
+
+  &__inline-img
+    width 100%
 
   &__graf
     rhythm('base')

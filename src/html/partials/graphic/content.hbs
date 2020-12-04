@@ -8,6 +8,10 @@
       <h3 class="main__section futura-medium" id="{{slugify value}}">{{{ value }}}</h3>
     {{/ifEquals}}
 
+    {{#ifEquals type 'img'}}
+    <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" />
+    {{/ifEquals}}
+
     {{#ifEquals type 'list'}}
       <ul class="main__graf--list col-md-11">
       {{#with value.points }}

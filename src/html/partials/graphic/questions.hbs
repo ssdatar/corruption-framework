@@ -8,7 +8,9 @@
         {{/ifEquals}}
 
         {{#ifEquals type 'subq'}}
-          <p class="main__questions--subq futura-bold">{{{ value.0.value }}}</p>
+          {{#isPara value.0.value }}
+            <p class="main__questions--subq futura-bold">{{{ value.0.value }}}</p>
+          {{/isPara}}
 
           {{#each value}}
             {{#ifEquals type 'subq_text'}}
@@ -20,8 +22,6 @@
             {{/ifEquals}}
           {{/each}}
         {{/ifEquals}}
-
-
       {{/each}}
     </ol>
     {{/with}}

@@ -1,5 +1,6 @@
 /* eslint-disable no-new */
 import AOS from 'aos';
+import scrolly from './scrolly';
 
 import removeMobileHover from './utils/removeMobileHover';
 import wireSocialButtons from './utils/wireSocialButtons';
@@ -22,4 +23,5 @@ if (document.querySelectorAll('.g-header__share').length) {
   });
 }
 
+scrolly();
 AOS.init();

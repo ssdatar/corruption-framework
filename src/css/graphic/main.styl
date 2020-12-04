@@ -159,6 +159,8 @@
   &__section
     rhythm('medium')
     margin-left 10px
+    +mq(bp-2)
+      margin-bottom 1em
 
   &__inline-img
     width 100%
@@ -171,15 +173,17 @@
     font-weight normal
     font-size 1em
     +mq(bp-2)
-      font-size 1.1em
+      font-size 1.05em
 
     &--list
       rhythm('base')
       max-width 40rem
       margin 1em
       line-height 1.6
+      font-size 1em
       +mq(bp-2)
         margin 1em 2em
+        font-size 1.05em
 
     strong
       font-weight bold

@@ -22,6 +22,10 @@
       </ul>
     {{/ifEquals}}
 
+    {{#ifEquals type 'fade-list'}}
+      {{> graphic/fade-list}}
+    {{/ifEquals}}
+
     {{#ifEquals type 'questions' }}
       {{> graphic/questions value page=../../page}}
     {{/ifEquals}}

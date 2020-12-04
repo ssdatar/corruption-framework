@@ -17,11 +17,30 @@
 .futura-medium
   font-family 'FuturaStd-Medium', Impact, Arial
 
+.bold
+  font-weight bold !important
+
 .intro
   padding 1em
   max-width 55rem
   margin 1em auto
-  height 70vh
+  +mq(bp-3)
+    max-width 45em
+
+  &__logos
+    display flex
+    flex-wrap nowrap
+
+    &--img
+      width 100%
+
+      &.bristol-logo
+        width 55%
+
+.super
+  vertical-align super
+  color $primary-blue
+  cursor pointer
 
 .sidebar
   display none
@@ -43,6 +62,9 @@
       padding .5em 1em
       a
         color $black !important
+
+    &--item[data-active='false']
+      color $offwhite
 
     &--item
       margin 1em 1em 1.5em 1em
@@ -77,6 +99,8 @@
 
       li
         margin .5em 0
+        font-size .95em
+
         a
           text-decoration none
           color $offwhite !important
@@ -104,6 +128,8 @@
 
 .main
   padding-top 1em
+  width 95%
+  margin 0 auto
 
   &__icon
     width 120px
@@ -111,10 +137,11 @@
 
 
   &__hed
-    font-size 1.5em
-    margin 1em 0
+    font-size 1.75em
+    margin 0
     +mq(bp-2)
       font-size 2em
+      margin 1em 0
     +mq(bp-3)
       font-size 3em
 
@@ -128,6 +155,7 @@
 
   &__section
     rhythm('medium')
+    margin-left 15px
 
   &__graf
     rhythm('base')
@@ -135,12 +163,17 @@
     margin 1em 0
     line-height 1.6
     font-weight normal
+    font-size 1em
+    +mq(bp-2)
+      font-size 1.1em
 
     &--list
       rhythm('base')
       max-width 40rem
-      margin 1em 2em
+      margin 1em
       line-height 1.6
+      +mq(bp-2)
+        margin 1em 2em
 
     strong
       font-weight bold
@@ -168,7 +201,8 @@
 
     &--list
       rhythm('base')
-
+      margin-bottom .75em
+      list-style-type disc
       strong
         font-weight bold
 
@@ -179,5 +213,10 @@
     .subq_list
       list-style-type disc
       rhythm('small')
+      line-height 1.6
       &--item
         margin-left 1.2em
+
+      .mini-list
+        margin-left 2em
+        list-style-type '- '

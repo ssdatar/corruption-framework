@@ -2,6 +2,15 @@
   <div class="intro" data-aos="fade-in" data-aos-duration="1000">
     <h1 class="main__hed futura-bold">{{{ @root.intro.hed }}}</h1>
     <h2 class="main__dek futura-medium">{{{ @root.intro.dek }}}</h2>
+
+    <div class="intro__logos">
+      <div>
+        <img src="assets/birmingham.png" alt="University of Birmingham logo" class="intro__logos--img" />
+      </div>
+      <div>
+        <img src="assets/bristol.png" alt="University of Bristol logo" class="intro__logos--img bristol-logo" />
+      </div>
+    </div>
   </div>
 
   <div class="row">
@@ -9,7 +18,7 @@
       {{> graphic/menu page='intro'}}
     </div>
 
-    <div class="col-md-8 col-lg-7">
+    <div class="col-md-7 col-lg-7">
       <div class="main">
         {{> graphic/content page='intro'}}
       </div>

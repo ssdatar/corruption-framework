@@ -3,10 +3,10 @@
     <figure class="sticky">
       <h4 class="bold futura-bold">{{{ boxtitle }}}</h4>
       <picture class="figure__img">
-        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:850px)">
-        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:400px)">
-        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}.jpg" media="(min-width:1px)">
-        <img class="lazyload" src="{{ imgpath }}/assets/{{ boximage }}.jpg"
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}_1280.jpg" media="(min-width:850px)">
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}_900.jpg" media="(min-width:400px)">
+        <source data-srcset="{{ imgpath }}/assets/{{ boximage }}_600.jpg" media="(min-width:1px)">
+        <img class="lazyload" src="{{ imgpath }}/assets/{{ boximage }}_placeholder.jpg"
           data-srcset="{{ imgpath }}/assets/{{ boximage }}_placeholder.jpg" alt="{{value.alt}}" />
       </picture>
       <figcaption class="full__caption benton-regular"></figcaption>

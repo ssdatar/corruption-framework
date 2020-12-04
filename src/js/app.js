@@ -5,6 +5,9 @@ import scrolly from './scrolly';
 import removeMobileHover from './utils/removeMobileHover';
 import wireSocialButtons from './utils/wireSocialButtons';
 
+import 'lazysizes';
+import 'picturefill';
+
 
 removeMobileHover();
 

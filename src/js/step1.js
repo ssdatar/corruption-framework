@@ -3,6 +3,7 @@ import AOS from 'aos';
 
 import removeMobileHover from './utils/removeMobileHover';
 import wireSocialButtons from './utils/wireSocialButtons';
+import './menu';
 
 import 'lazysizes';
 import 'picturefill';

@@ -16,8 +16,21 @@
       {{/with}}
     {{/ifEquals}}
 
+    {{#ifEquals type 'framework-img'}}
+      <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" />
+    {{/ifEquals}}
+
     {{#ifEquals type 'img'}}
-    <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" />
+      <figure class="figure__full">
+        <picture class="figure__img">
+          <source data-srcset="{{value.url}}assets/{{value.name}}_1280.jpg" media="(min-width:850px)">
+          <source data-srcset="{{value.url}}assets/{{value.name}}_900.jpg" media="(min-width:400px)">
+          <source data-srcset="{{value.url}}assets/{{value.name}}_600.jpg" media="(min-width:1px)">
+          <img class="lazyload" src="{{value.url}}assets/{{value.name}}_placeholder.jpg"
+            data-srcset="{{value.url}}assets/{{value.name}}_placeholder.jpg" alt="{{value.alt}}" />
+        </picture>
+        {{!-- <figcaption class="full__caption benton-regular">{{value.caption}} ({{value.credit}})</figcaption> --}}
+      </figure>
     {{/ifEquals}}
 
     {{#ifEquals type 'list'}}

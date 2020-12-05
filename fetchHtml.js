@@ -152,6 +152,7 @@ function parseHtml(html, filename) {
   });
 
   const parser = new htmlparser.Parser(handler);
+  console.log('Working on', filename);
   parser.write(html);
   parser.done();
 }
@@ -169,8 +170,6 @@ function exportDoc({ id, name }) {
     }
   };
 
-  console.log('Working on', name);
-
   return request(url, (error, response, body) => {
     if (error) throw error;
 
@@ -179,10 +178,11 @@ function exportDoc({ id, name }) {
 }
 
 if (story) {
-  story.forEach((googleObj) => {
-    exportDoc(googleObj);
-      // .catch(console.error);
-  });
+  exportDoc(story[0]);
+  exportDoc(story[1]);
+  exportDoc(story[2]);
+  exportDoc(story[3]);
+  exportDoc(story[4]);
 } else {
   exportDoc(config.copy.google);
 }

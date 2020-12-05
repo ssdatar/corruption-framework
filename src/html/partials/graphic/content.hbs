@@ -16,8 +16,12 @@
       {{/with}}
     {{/ifEquals}}
 
+    {{#ifEquals type 'anchor'}}
+      <div id="{{{ value.id }}}"></div>
+    {{/ifEquals}}
+
     {{#ifEquals type 'framework-img'}}
-      <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" />
+      <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" id="framework-img" />
     {{/ifEquals}}
 
     {{#ifEquals type 'img'}}

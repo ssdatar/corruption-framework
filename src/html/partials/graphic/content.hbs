@@ -8,6 +8,14 @@
       <h3 class="main__section futura-medium" id="{{slugify value}}">{{{ value }}}</h3>
     {{/ifEquals}}
 
+    {{#ifEquals type 'aside'}}
+      {{#with value}}
+        {{#each this}}
+        <aside class="main__aside futura-medium">{{{ value }}}</aside>
+        {{/each}}
+      {{/with}}
+    {{/ifEquals}}
+
     {{#ifEquals type 'img'}}
     <img src="assets/framework.png" alt="Graphic showing four step corruption framework" class="main__inline-img" />
     {{/ifEquals}}

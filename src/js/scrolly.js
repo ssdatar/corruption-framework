@@ -4,13 +4,14 @@ import {
   addClass, selectAll, removeClass,
 } from './utils/dom';
 
-const scrolly = () => {
+const scrolly = (offset) => {
   selectAll('.sticky').forEach(el => Stickyfill.add(el));
+  const o = offset || 0.2;
 
   scrollama()
     .setup({
       step: '.sticky',
-      offset: window.innerWidth < 600 ? 0.5 : 0.1,
+      offset: window.innerWidth < 600 ? 0.5 : o,
     })
     .onStepEnter(({ element }) => {
       console.log('sticky enter');

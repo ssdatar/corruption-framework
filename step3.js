@@ -229,14 +229,15 @@ var _dom = __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var scrolly = function scrolly() {
+var scrolly = function scrolly(offset) {
   (0, _dom.selectAll)('.sticky').forEach(function (el) {
     return _stickyfilljs2.default.add(el);
   });
+  var o = offset || 0.2;
 
   (0, _scrollama2.default)().setup({
     step: '.sticky',
-    offset: window.innerWidth < 600 ? 0.5 : 0.1
+    offset: window.innerWidth < 600 ? 0.5 : o
   }).onStepEnter(function (_ref) {
     var element = _ref.element;
 

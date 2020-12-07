@@ -92,5 +92,24 @@
     "progressBar": true,
     "ads": false,
     "js": "step4.js" 
+  },
+  "wrap": {
+    "title": "Wrapping up: Thinking about evidence",
+    "author": "",
+    "description": "This short framework aims to help people who are designing anti-corruption interventions, or people who are working on something that’s being hindered by corruption, to think differently and to develop approaches that are more likely to be effective and more sustainable.",
+    "keywords": "Comma, delimited, for, seo",
+    "url": "https://saurabhdatar.com/corruption-slush/wrapping-up",
+    "imagePath": "../",
+    "imageUrl": "",
+    "section": "",
+    "sectionUrl": "",
+    "credits": "",
+    "teasers": [],
+    "social": true,
+    "meter": true,
+    "socialConnect": true,
+    "progressBar": true,
+    "ads": false,
+    "js": "wrap.js" 
   }
 }

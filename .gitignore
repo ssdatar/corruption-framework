@@ -4,5 +4,6 @@ node_modules/
 data/key.json
 data/intro.json
 data/index.json
+data/wrap.json
 data/step*.json
 dist/
